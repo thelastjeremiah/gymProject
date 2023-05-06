@@ -4,47 +4,63 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwind Template Example</title>
+  <title>Gym Project</title>
+
+  <!-- ================== css  ==================-->
   <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/custom.css">
+  <!-- ================== css  ==================-->
+
+  <!-- ================== fonts  ==================-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- ================== fonts  ==================-->
+
+  <!-- ================== fontAwesome  ==================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ================== fontAwesome  ==================-->
 </head>
 <body>
   
   <div class="bg-cover bg-center h-screen " style="background-image: url(../image/hero-image.jpg)">
-    
-    <div class="bg-gray-100 font-sans leading-normal tracking-normal">
-      <nav class="bg-white p-4 shadow-md fixed w-full z-10 top-0">
-        <div class="container mx-auto flex items-center justify-between flex-wrap">
-          <div class="flex items-center flex-shrink-0 text-gray-800 mr-6">
-            <span class="font-semibold text-xl tracking-tight">Menu</span>
-          </div>
-          <div class="block lg:hidden">
-            <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none">
-              <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-            </button>
-          </div>
-          <div class="w-full flex-grow  " id="nav-content">
-            <ul class="list-reset lg:flex justify-end flex-1 items-center">
-              <li class="mr-3">
-                <a class="inline-block py-2 px-4 text-gray-900 font-bold no-underline" href="#">Active</a>
-              </li>
-              <li class="mr-3">
-                <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="#">link</a>
-              </li>
-              <li class="mr-3">
-                <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="#">link</a>
-              </li>
-            </ul>
+
+    <div class="flex justify-between ">
+
+      <div class="container mx-auto flex justify-between flex-col md:flex-row pt-5 px-10 md:px-0">
+
+        <p class="text-white BebasNeu text-xl mb-5 md:mb-0 cursor-pointer">logo here</p>
+
+        <div class="hidden transition duration-500 ease-in-out md:block " id="nav-list">
+          <div class="flex flex-col md:flex-row">
+            <span class="text-white BebasNeu text-xl my-1 mx-0 md:mx-3 md:my-0 cursor-pointer">gym membership</span>
+            <span class="text-white BebasNeu text-xl my-1 mx-0 md:mx-3 md:my-0 cursor-pointer">gym near me</span>
+            <span class="text-white BebasNeu text-xl my-1 mx-0 md:mx-3 md:my-0 cursor-pointer">studio classes</span>
+            <span class="text-white BebasNeu text-xl my-1 mx-0 md:mx-3 md:my-0 cursor-pointer">training </span>
+            <span class="text-white BebasNeu text-xl my-1 mx-0 md:mx-3 md:my-0 cursor-pointer">life style </span>
           </div>
         </div>
-      </nav>
+
+      </div>
+  
+      <div class="block md:hidden pt-5 px-10 md:px-0" id="nav-icon">
+        <i class="fa-solid fa-bars text-white text-2xl"></i>
+      </div>
+
+
     </div>
+    
+
   </div>  
 
 
     <!--Toggle button (hidden by default)-->
     <script>
-      document.getElementById('nav-toggle').onclick = function(){
-        document.getElementById("nav-content").classList.toggle("hidden");
+      nav_icon = document.getElementById('nav-icon')
+      nav_list = document.getElementById('nav-list')
+
+      nav_icon.onclick = () => {
+        nav_list.classList.toggle("hidden")
       }
     </script>
 </body>
