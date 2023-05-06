@@ -8,12 +8,44 @@
   <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+  
   <div class="bg-cover bg-center h-screen " style="background-image: url(../image/hero-image.jpg)">
-    <div class="container mx-auto">
-      <div class="">
-        <p class="text-white">somethings</p>
-      </div>
+    
+    <div class="bg-gray-100 font-sans leading-normal tracking-normal">
+      <nav class="bg-white p-4 shadow-md fixed w-full z-10 top-0">
+        <div class="container mx-auto flex items-center justify-between flex-wrap">
+          <div class="flex items-center flex-shrink-0 text-gray-800 mr-6">
+            <span class="font-semibold text-xl tracking-tight">Menu</span>
+          </div>
+          <div class="block lg:hidden">
+            <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none">
+              <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            </button>
+          </div>
+          <div class="w-full flex-grow  " id="nav-content">
+            <ul class="list-reset lg:flex justify-end flex-1 items-center">
+              <li class="mr-3">
+                <a class="inline-block py-2 px-4 text-gray-900 font-bold no-underline" href="#">Active</a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="#">link</a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="#">link</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
   </div>  
+
+
+    <!--Toggle button (hidden by default)-->
+    <script>
+      document.getElementById('nav-toggle').onclick = function(){
+        document.getElementById("nav-content").classList.toggle("hidden");
+      }
+    </script>
 </body>
 </html>
