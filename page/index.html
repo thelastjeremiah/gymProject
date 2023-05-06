@@ -23,15 +23,16 @@
 </head>
 <body>
   
-  <div class="bg-cover bg-center h-screen " style="background-image: url(../image/hero-image.jpg)">
+  <div class="bg-cover bg-center h-screen relative" style="background-image: url(../image/hero-image.jpg)">
 
+    <!-- ================== navigation bar ================== -->
     <div class="flex justify-between ">
 
       <div class="container mx-auto flex justify-between flex-col md:flex-row pt-5 px-10 md:px-0">
 
         <p class="text-white BebasNeu text-xl mb-5 md:mb-0 cursor-pointer">logo here</p>
 
-        <div class="hidden transition duration-500 ease-in-out md:block " id="nav-list">
+        <div class="hidden md:block" id="nav-list">
           <div class="flex flex-col md:flex-row">
             <span class="text-white BebasNeu text-xl my-1 mx-0 md:mx-3 md:my-0 cursor-pointer">gym membership</span>
             <span class="text-white BebasNeu text-xl my-1 mx-0 md:mx-3 md:my-0 cursor-pointer">gym near me</span>
@@ -49,7 +50,22 @@
 
 
     </div>
-    
+    <!-- ================== navigation bar ================== -->
+
+
+    <div class="">
+      <div class="absolute right-0 md:right-5 top-1/2 transform -translate-y-1/2 px-5 md:px-0">   
+        <span class="text-white text-9xl BebasNeu block">your results your ways.</span>
+        <div class="flex justify-start md:justify-end">
+          <button class="bg-rose-800 p-4 rounded-md mr-0 md:mr-10">
+            <span class="text-white text-4xl BebasNeu block">join us today.</span>
+          </button>
+        </div>
+        
+      </div>
+    </div>
+
+
 
   </div>  
 
