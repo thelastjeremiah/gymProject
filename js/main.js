@@ -14,18 +14,19 @@ window.addEventListener("scroll", () => {
     nav_scroll.classList.add("bg-rose-800");
     nav_scroll.classList.add("transition");
     nav_scroll.classList.add("duration-700");
+    nav_scroll.classList.remove(" bg-151A1E");
 
     changeColoronScroll.forEach(changeColoronScroll => {
-      changeColoronScroll.classList.remove('text-white');
-      changeColoronScroll.classList.add('text-black');
+      changeColoronScroll.classList.remove('text-white')
+      changeColoronScroll.classList.add('text-black')
     });
 
   } else {
     nav_scroll.classList.remove("bg-rose-800");
 
     changeColoronScroll.forEach(changeColoronScroll => {
-      changeColoronScroll.classList.add('text-white');
-      changeColoronScroll.classList.remove('text-black');
+      changeColoronScroll.classList.add('text-white')
+      changeColoronScroll.classList.remove('text-black')
     });
 
   }
