@@ -5,3 +5,15 @@
 .Montserrat{
   font-family: 'Montserrat', sans-serif;
 }
+
+input::placeholder {
+  font-family: 'Bebas Neue', cursive;
+}
+
+input{
+  padding-left: 1rem;
+}
+
+input:focus {
+  outline: none ;
+}
