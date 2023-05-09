@@ -2,6 +2,8 @@ nav_icon = document.getElementById('nav-icon')
 nav_list = document.getElementById('nav-list')
 nav_scroll = document.getElementById('nav-scroll')
 changeColoronScroll = document.querySelectorAll('.change-text-color-on-scroll');
+animationScrolls = document.querySelectorAll('.animation-Scrolls')
+
 
 
 nav_icon.onclick = () => {
@@ -14,7 +16,8 @@ window.addEventListener("scroll", () => {
     nav_scroll.classList.add("bg-rose-800");
     nav_scroll.classList.add("transition");
     nav_scroll.classList.add("duration-700");
-    nav_scroll.classList.remove(" bg-151A1E");
+    nav_scroll.classList.add("animate__animated animate__fadeInDown");
+    animationScrolls.classList.remove("bg-151A1E")
 
     changeColoronScroll.forEach(changeColoronScroll => {
       changeColoronScroll.classList.remove('text-white')
