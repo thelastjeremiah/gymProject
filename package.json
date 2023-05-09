@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "build": "tailwindcss -i ./tailwind.css -o ./css/main.css",
-    "watch": "tailwindcss -i ./tailwind.css -o ./css/main.css --watch"
+    "dev": "tailwindcss -i ./tailwind.css -o ./css/main.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
   }
 }
